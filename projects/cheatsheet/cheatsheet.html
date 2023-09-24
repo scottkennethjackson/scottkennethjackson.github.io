@@ -52,12 +52,12 @@
                 <tr>
                     <td id="b" class="tag">&lt;b&gt;</td>
                     <td>Bring Attention To</td>
-                    <td>Used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use &lt;b&gt; for styling text or granting importance. If you wish to create boldface text, you should use the CSS font-weight property. If you wish to indicate an element is of special importance, you should use the &lt;strong&gt; element.</td>
+                    <td>Used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use <span class="tag">&lt;b&gt;</span> for styling text or granting importance. If you wish to create boldface text, you should use the CSS font-weight property. If you wish to indicate an element is of special importance, you should use the <span class="tag">&lt;strong&gt;</span> element.</td>
                 </tr>
                 <tr>
                     <td class="tag">&lt;base&gt;</td>
                     <td>Document Base URL</td>
-                    <td>Specifies the base URL to use for all relative URLs in a document. There can be only one &lt;base&gt; element in a document.</td>
+                    <td>Specifies the base URL to use for all relative URLs in a document. There can be only one <span class="tag">&lt;base&gt;</span> element in a document.</td>
                 </tr>
                 <tr>
                     <td class="tag">&lt;bdi&gt;</td>
@@ -77,7 +77,7 @@
                 <tr>
                     <td class="tag">&lt;body&gt;</td>
                     <td>Document Body</td>
-                    <td>Represents the content of an HTML document. There can be only one &lt;body&gt; element in a document.</td>
+                    <td>Represents the content of an HTML document. There can be only one <span class="tag">&lt;body&gt;</span> element in a document.</td>
                 </tr>
                 <tr>
                     <td class="tag">&lt;br&gt;</td>
@@ -112,12 +112,72 @@
                 <tr>
                     <td class="tag">&lt;col&gt;</td>
                     <td>Table Column</td>
-                    <td>Defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a &lt;colgroup&gt; element.</td>
+                    <td>Defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a <span class="tag">&lt;colgroup&gt;</span> element.</td>
                 </tr>
                 <tr>
                     <td class="tag">&lt;colgroup&gt;</td>
                     <td>Table Column Group</td>
                     <td>Defines a group of columns within a table.</td>
+                </tr>
+                <tr>
+                    <td id="d" class="tag">&lt;data&gt;</td>
+                    <td>Data</td>
+                    <td>Links a given piece of content with a machine-readable translation. If the content is time or date-related, the <span class="tag">&lt;time&gt;</span> element must be used.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;datalist&gt;</td>
+                    <td>Data List</td>
+                    <td>Contains a set of <span class="tag">&lt;option&gt;</span> elements that represent the permissible or recommended options available to choose from within other controls.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;dd&gt;</td>
+                    <td>Description Details</td>
+                    <td>Provides the description, definition, or value for the preceding term (<span class="tag">&lt;dt&gt;</span>) in a description list (<span class="tag">&lt;dl&gt;</span>).</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;del&gt;</td>
+                    <td>Deleted Text</td>
+                    <td>Represents a range of text that has been deleted from a document. This can be used when rendering "track changes" or source code diff information, for example. The <span class="tag">&lt;ins&gt;</span> element can be used for the opposite purpose: to indicate text that has been added to the document.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;details&gt;</td>
+                    <td>Details</td>
+                    <td>Creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the <span class="tag">&lt;summary&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;dfn&gt;</td>
+                    <td>Definition</td>
+                    <td>Used to indicate the term being defined within the context of a definition phrase or sentence. The ancestor <span class="tag">&lt;p&gt;</span> element, the <span class="tag">&lt;dt&gt;</span>/<span class="tag">&lt;dd&gt;</span> pairing, or the nearest <span class="tag">&lt;section&gt;</span> ancestor of the <span class="tag">&lt;dfn&gt;</span> element, is considered to be the definition of the term.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;dialog&gt;</td>
+                    <td>Dialog</td>
+                    <td>Represents a dialog box or other interactive component, such as a dismissible alert, inspector, or subwindow.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;div&gt;</td>
+                    <td>Content Division</td>
+                    <td>The generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;dl&gt;</td>
+                    <td>Description List</td>
+                    <td>Represents a description list. The element encloses a list of groups of terms (specified using the <span class="tag">&lt;dt&gt;</span> element) and descriptions (provided by <span class="tag">&lt;dd&gt;</span> elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;dt&gt;</td>
+                    <td>Description Term</td>
+                    <td>Specifies a term in a description or definition list, and as such must be used inside a <span class="tag">&lt;dl&gt;</span> element. It is usually followed by a <span class="tag">&lt;dd&gt;</span> element; however, multiple <span class="tag">&lt;dt&gt;</span> elements in a row indicate several terms that are all defined by the immediate next <span class="tag">&lt;dd&gt;</span> element.</td>
+                </tr>
+                <tr>
+                    <td id="e" class="tag">&lt;em&gt;</td>
+                    <td>Emphasis</td>
+                    <td>Marks text that has stress emphasis. The <span class="tag">&lt;em&gt;</span> element can be nested, with each level of nesting indicating a greater degree of emphasis.</td>
+                </tr>
+                <tr>
+                    <td class="tag">&lt;embed&gt;</td>
+                    <td>Embed External Content</td>
+                    <td>Embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in.</td>
                 </tr>
             </tbody>
         </table>
