@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FEEDDE;
     font-family: Verdana, sans-serif;
+    font-size: 14px;
 }
 
 h1 {
@@ -25,6 +30,7 @@ ul {
 
 li a {
     color: #000000;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -66,6 +72,7 @@ td {
 
 .tag {
     font-family: monospace;
+    font-weight: bold;
 }
 
 tfoot {
