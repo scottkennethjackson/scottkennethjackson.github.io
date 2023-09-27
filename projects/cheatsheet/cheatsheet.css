@@ -27,7 +27,7 @@ ul {
     width: 1em;
     border-radius: 1em;
     padding: 1em .5em;
-    background-color: rgba(128, 128, 128, .2);
+    background-color: rgba(0, 0, 96, .1);
     line-height: 1.5;
     text-align: center;
     list-style: none;
@@ -94,14 +94,5 @@ tfoot {
 
 .tag {
     font-family: monospace;
-    font-weight: bold;
-}
-
-.serif {
-    font-family: Georgia, serif;
-    font-weight: bold;
-}
-
-.bold {
     font-weight: bold;
 }
