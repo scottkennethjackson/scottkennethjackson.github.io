@@ -52,7 +52,7 @@ nav {
 
 .mission-background {
     height: 700px;
-    max-width: 1200px;
+    width: 1200px;
     opacity: 0.5;
 }
 
@@ -80,13 +80,12 @@ nav {
 }
 
 .featured-teas {
-    height: 100px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-.card {
+.tea-card {
     margin: 10px;
 }
 
@@ -97,6 +96,50 @@ nav {
 
 .tea {
     padding-top: 10px;
+}
+
+#locations {
+    height: fit-content;
+    margin: 69px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations-blurb {
+    position: absolute;
+}
+
+.locations-background {
+    height: 500px;
+    max-height: 1000px;
+    width: 1200px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.locations-blurb {
+    display: flex;
+    flex-direction: column;
+}
+
+.locations-info {
+    display: flex;
+    justify-content: center;
+}
+
+.location-card {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 20px;
+    background-color: black;
+}
+
+.location-card p {
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
