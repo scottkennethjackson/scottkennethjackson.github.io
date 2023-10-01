@@ -8,7 +8,8 @@ html {
     font-size: 22px;
     color: seashell;
     background-color: black;
-    
+    text-align: center;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -38,8 +39,12 @@ nav {
     text-decoration: underline;
 }
 
+.links a:nth-child(2) {
+    margin: 0 10px;
+}
+
 #mission {
-    margin-top: 69px;
+    margin: 69px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,17 +52,55 @@ nav {
 
 .mission-background {
     height: 700px;
-    width: 1200px;
-    opacity: 0.9;
+    max-width: 1200px;
+    opacity: 0.5;
 }
 
 .mission-blurb {
-    height: 100px;
-    width: 1200px;
+    height: 120px;
+    width: 100%;
+    max-width: 1200px;
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     background-color: black;
+}
+
+#featured {
+    max-width: 1000px;
+    margin: 69px auto;
+}
+
+.featured-blurb {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-teas {
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+}
+
+.thumbnail {
+    height: 200px;
+    width: 300px;
+}
+
+.tea {
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .links {
+        display: none;
+    }
 }
