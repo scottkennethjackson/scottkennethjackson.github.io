@@ -39,12 +39,16 @@ nav {
     text-decoration: underline;
 }
 
+.links a:active {
+    color: salmon;
+}
+
 .links a:nth-child(2) {
     margin: 0 10px;
 }
 
 #mission {
-    margin: 69px auto;
+    padding-top: 69px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +73,8 @@ nav {
 
 #featured {
     max-width: 1000px;
-    margin: 69px auto;
+    margin: 0 auto;
+    padding-top: 69px;
 }
 
 .featured-blurb {
@@ -99,8 +104,7 @@ nav {
 }
 
 #locations {
-    height: fit-content;
-    margin: 69px auto;
+    padding-top: 69px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,6 +144,26 @@ nav {
 
 .location-card p {
     margin-top: 20px;
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5 {
+    margin-top: 20px;
+}
+
+.underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.underline:active {
+    color: salmon;
 }
 
 @media screen and (max-width: 600px) {
