@@ -30,6 +30,7 @@ h1 {
 main {
     width: 75%;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .title {
@@ -46,6 +47,10 @@ main {
 
 .frames {
     background-color: lightcoral;
+}
+
+.paint {
+    background-color: lightblue;
 }
 
 .card {
