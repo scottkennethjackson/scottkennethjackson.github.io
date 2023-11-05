@@ -44,6 +44,10 @@ main {
     background-color: mediumspringgreen;
 }
 
+.frames {
+    background-color: lightcoral;
+}
+
 .card {
     display: flex;
 }
