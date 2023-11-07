@@ -1,3 +1,26 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px dashed red;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(180, 221, 213);
+}
+
+.title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3rem;
+  color: rgb(8, 20, 58);
+}
+
+.subheading {
+  font-family: 'Source Sans 3', Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: rgb(246, 131, 48);
 }
