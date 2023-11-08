@@ -1,5 +1,4 @@
 /* Universal styles */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,7 +28,6 @@ a:active {
 }
 
 /* Header styles */
-
 .title {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 3rem;
@@ -70,10 +68,6 @@ a:active {
   position: relative;
 }
 
-.mockup {
-  width: 100%;
-}
-
 .container:hover .screen {
   visibility: visible;
 }
@@ -89,6 +83,11 @@ a:active {
   padding: .5rem;
   color: rgb(238, 240, 238);
   background-color: rgba(0, 0, 0, .75);
+}
+
+.mockup {
+  width: 100%;
+  border: .5px solid black;
 }
 
 .blurb {
