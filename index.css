@@ -1,8 +1,10 @@
+/* Universal styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px dashed red;
+  
 }
 
 html {
@@ -13,14 +15,101 @@ html {
   background-color: rgb(180, 221, 213);
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(246, 131, 48);
+}
+
+a:active {
+  filter: brightness(90%);
+}
+
+/* Header styles */
+
 .title {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 3rem;
   color: rgb(8, 20, 58);
 }
 
-.subheading {
+.subtitle {
   font-family: 'Source Sans 3', Helvetica, sans-serif;
   font-size: 1.5rem;
   color: rgb(246, 131, 48);
+}
+
+/* Portfolio styles */
+.portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 30%;
+  position: relative;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgb(238, 240, 238);
+}
+
+.project:hover {
+  transform: translateX(.3rem) translateY(-.3rem);
+  box-shadow: -.3rem .3rem black;
+}
+
+.project:hover .hidden {
+  visibility: visible;
+}
+
+.container {
+  position: relative;
+}
+
+.mockup {
+  width: 100%;
+}
+
+.container:hover .screen {
+  visibility: visible;
+}
+
+.screen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  color: rgb(238, 240, 238);
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.blurb {
+  text-align: left;
+}
+
+.heading {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.code {
+  margin-bottom: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.repo {
+  font-family: 'Source Sans 3', Helvetica, sans-serif;
+  float: right;
 }
