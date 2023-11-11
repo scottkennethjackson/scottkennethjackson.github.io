@@ -1,0 +1,141 @@
+/* Universal styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+  
+html {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+/* Layout styles */
+.background {
+    width: 100%;
+    position: relative;
+}
+
+.screen {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+}
+
+.wireframe {
+    width: 100%;
+}
+
+.foreground {
+    position: fixed;
+    top: 0;
+    margin: 1rem;
+}
+
+/* Color styles */
+.swatches, .codes {
+    display: flex;
+}
+
+.swatches .container {
+    height: 150px;
+    width: 150px;
+    margin-right: .2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.swatches .container:last-child {
+    margin-right: 0;
+}
+
+.color1 {
+    background-color: rgb(180, 221, 213);
+}
+
+.color2 {
+    background-color: rgb(246, 131, 48);
+}
+
+.color3 {
+    background-color: rgb(247, 196, 18);
+}
+
+.color4 {
+    background-color: rgb(3, 55, 86);
+}
+
+.color5 {
+    background-color: rgb(8, 20, 58);
+}
+
+.white {
+    color: rgb(255, 255, 255);
+}
+
+.codes .container {
+    width: 150px;
+    margin: .2rem .2rem 0 0;
+    padding: .5rem;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.codes .container:last-child {
+    margin-right: 0;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .75rem;
+}
+
+/* Font styles */
+#font {
+    margin-top: 1rem;
+    padding: .5rem;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+h1, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+h2, h4, .paragraphs {
+    font-family: 'Source Sans 3', Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-weight:700;
+}
+
+.italic {
+    font-style: italic;
+}
