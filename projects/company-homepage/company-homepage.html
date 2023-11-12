@@ -46,18 +46,30 @@
         <div class="gallery">
             <div class="staff-img">
                 <span class="backdrop"></span>
-                <img src="./img/staff1.png" class="snap" alt="">
+                <img src="./img/staff1.png" class="snap" alt="Mai">
+            </div>
+            <div class="staff-info hidden-x">
+                <h3 class="header">Mai</h3>
+                <p class="bio">Mai's art is a harmonious blend of tradition and modernity. With delicate precision, she weaves cultural tapestries, creating tattoos that resonate with both personal narratives and the echoes of ancient traditions.</p>
             </div>
             <div class="staff-img">
                 <span class="backdrop"></span>
-                <img src="./img/staff2.png" class="snap" alt="">
+                <img src="./img/staff2.png" class="snap" alt="Dirk">
+            </div>
+            <div class="staff-info hidden-x">
+                <h3 class="header">Dirk</h3>
+                <p class="bio">Hailing from the gritty streets of Brooklyn, Dirk's art is a fusion of urban edge and timeless symbolism. Each piece telling a raw, unfiltered story—a visual symphony that echoes the pulse of the city’s heartbeat.</p>
             </div>
             <div class="staff-img">
                 <span class="backdrop"></span>
-                <img src="./img/staff3.png" class="snap" alt="">
+                <img src="./img/staff3.png" class="snap" alt="Elouise">
+            </div>
+            <div class="staff-info hidden-x">
+                <h3 class="header">Elouise</h3>
+                <p class="bio">Dancing between ethereal and edgy, Elouise's art is a testament to her eclectic influences. With a needle as her paintbrush, she crafts visual poetry on skin, infusing each piece with a touch of whimsy and a dash of rebellion.</p>
             </div>
         </div>
-        <div class="stats">
+        <div class="stats hidden-y">
             <div class="staff-info">
                 <h3 class="header">Mai</h3>
                 <p class="bio">Mai's art is a harmonious blend of tradition and modernity. With delicate precision, she weaves cultural tapestries, creating tattoos that resonate with both personal narratives and the echoes of ancient traditions.</p>
@@ -72,6 +84,27 @@
             </div>
         </div>
         <img src="./img/sun.png" class="break" alt="Sun illustration">
+    </section>
+    <section id="contact">
+        <h2 class="title">Contact</h2>
+        <form>
+            <fieldset>
+                <label>Name</label>
+                <input type="text" name="name" id="name" required>
+                <label>Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="artist">Select Artist</label>
+                <select name="srtist" id="artist" required>
+                    <option value="">--</option>
+                    <option value="mai">Mai</option>
+                    <option value="dirk">Dirk</option>
+                    <option value="elouise">Elouise</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="10"></textarea>
+                <button>Submit</button>
+            </fieldset>
+        </form>
     </section>
   </main>
 </html>
