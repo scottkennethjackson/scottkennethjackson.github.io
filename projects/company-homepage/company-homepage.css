@@ -3,54 +3,125 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
-  html {
+html {
     font-family: 'Padauk', Helvetica, sans-serif;
     font-size: 16px;
     color: #000000;
     background-color: #e8cbbf;
-  }
+}
 
-  a {
+a {
     color: inherit;
     text-decoration: none;
-  }
+}
 
-  /* Banner styles */
-  .menu {
+/* Banner styles */
+.menu {
+    height: 50px;
     display: flex;
     justify-content: space-around;
-    font-family: 'Chicle', Helvetica, sans-serif;
+    align-items: center;
+    font-family: 'barricada-pro', serif;
     font-size: 2rem;
-    text-align: center;
-  }
-
-  ul {
-    display: flex;
     list-style: none;
-  }
+    color: #3b462f;
+}
 
-  .banner {
+.banner {
     width: 100%;
     display: flex;
     position: relative;
     justify-content: center;
-  }
+    align-items: center;
+}
 
-  .background-img {
+.background-img {
     width: 100%;
-  }
+}
 
-  .filter {
+.filter {
     height: 100%;
     width: 100%;
     position: absolute;
     background-color: #000000;
-    opacity: .2;
-  }
+    opacity: .3;
+}
 
-  .logo {
-    height: 100%;
+.logo {
+    height: 75%;
     position: absolute;
-  }
+}
+
+/* About styles */
+#about {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'barricada-pro', serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #3b462f;
+}
+
+.break {
+    height: 5rem;
+    margin-top: 2rem;
+    object-fit: contain;
+}
+
+/* Team styles */
+#team {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery {
+    display: flex;
+}
+
+.staff-img {
+    display: flex;
+    position: relative;
+    margin: 1rem;
+}
+
+.backdrop {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #3b462f;
+    opacity: .3;
+}
+
+.snap {
+    width: 100%;
+    position: relative;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.staff-info {
+    width: 100%;
+    margin: 0 1rem;
+    padding: .5rem;
+    color: #ffffff;
+    background-color: #3b462f;
+}
+
+.header {
+    font-family: 'Asap', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bold {
+    font-weight: 700;
+}
