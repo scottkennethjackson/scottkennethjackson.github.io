@@ -8,11 +8,15 @@
 }
 
 html {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-align: justify;
     color: #000000;
     background-color: #ffff00;
+}
+
+main {
+    margin: 2rem;
 }
 
 a {
@@ -39,4 +43,41 @@ a:active {
     color: #ffff00;
     background-color: #000000;
     list-style: none;
+}
+
+/* Banner styles */
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.filter {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #000000;
+    opacity: .5;
+}
+
+.logo {
+    position: absolute;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Suez One', serif;
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+.icon {
+    height: 5rem;
+    filter: invert(100%);
 }
