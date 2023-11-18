@@ -26,6 +26,10 @@ nav {
     background-color: black;
 }
 
+h2 {
+    color: salmon;
+}
+
 .logo {
     height: 50px;
 }
@@ -57,7 +61,7 @@ nav {
 .mission-background {
     height: 700px;
     width: 1200px;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .mission-blurb {
@@ -68,7 +72,6 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: black;
 }
 
 #featured {

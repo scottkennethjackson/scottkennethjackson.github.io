@@ -5,33 +5,15 @@
 }
   
 html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     color: rgb(0, 0, 0);
     line-height: 1.5;
-}
-
-/* Layout styles */
-.background {
-    width: 100%;
-    position: relative;
-}
-
-.screen {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .1);
-    position: absolute;
-}
-
-.wireframe {
-    width: 100%;
-}
-
-.foreground {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color: rgb(223, 223, 223
+    );
 }
 
 /* Color styles */
@@ -95,6 +77,13 @@ html {
     font-size: .75rem;
 }
 
+.swatches .hidden-x {
+    height: unset;
+    display: none;
+    padding: .5rem;
+    background-color: rgb(255, 255, 255);
+}
+
 /* Font styles */
 #font {
     margin-top: 1rem;
@@ -139,4 +128,79 @@ h4 {
 
 .italic {
     font-style: italic;
+}
+
+@media only screen and (orientation: portrait) {
+    html {
+        height: fit-content;
+        margin: 0 2rem;
+    }
+
+    #color {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .swatches {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swatches .container {
+        height: initial;
+        width: 100%;
+        margin: .2rem 0;
+        padding: .5rem;
+    }
+
+    .swatches .container:nth-child(even) {
+        margin-bottom: 1rem;
+    }
+
+    .swatches .container:last-child {
+        margin-bottom: 0;
+    }
+
+    .swatches .hidden-x {
+        display: inherit;
+    }
+
+    .hidden-y {
+        display: none;
+    }
+
+    #font {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+        background-color: initial;
+    }
+
+    .row {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .row:last-child {
+        margin-bottom: 0;
+    }
+
+    .headings, .paragraphs {
+        border: 1px solid rgb(0, 0, 0);
+        padding: .5rem;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .headings {
+        border-bottom: none;
+    }
+
+    .paragraphs {
+        border-top: none;
+    }
 }
