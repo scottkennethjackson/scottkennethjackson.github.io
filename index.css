@@ -41,6 +41,7 @@ a:active {
 }
 
 .socials {
+  height: 1.5rem;
   width: 30%;
   display: flex;
   justify-content: space-around;
@@ -48,7 +49,6 @@ a:active {
 }
 
 .fa-brands {
-  height: 2rem;
   color: rgb(8, 20, 58);
 }
 
