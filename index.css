@@ -48,8 +48,16 @@ a:active {
 }
 
 .fa-brands {
-  height: 2rem;
+  font-size: 2rem;
   color: rgb(8, 20, 58);
+}
+
+.fa-brands:hover {
+  color: rgb(246, 131, 48);
+}
+
+.fa-brands:active {
+  filter: brightness(90%);
 }
 
 /* Portfolio styles */
