@@ -55,7 +55,9 @@ address {
 }
 
 .banner-img {
+    height: 500px;
     width: 100%;
+    object-fit: cover;
 }
 
 .filter {
@@ -153,6 +155,10 @@ address {
     .menu {
         height: 40px;
         font-size: 1.25rem;
+    }
+
+    .banner-img {
+        height: unset;
     }
 
     .title {
