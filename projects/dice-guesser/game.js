@@ -19,25 +19,39 @@ guessButton.addEventListener('click', () => {
   // Retrieve the player's guess
   const currentHumanGuess = humanGuessInput.value;
   // Make a random 'computer guess'
-  const computerGuess = Math.floor(Math.random() * 10);
+  const computerGuess = Math.floor(Math.random() * 6 + 1);
 
   // Display the computer guess and the target
   computerGuessDisplay.innerText = computerGuess;
-  targetNumberDisplay.innerText = target;
+  
+  //targetNumberDisplay.innerText = target;
+  if (target === 1) {
+    targetNumberDisplay.innerText = 'One';
+  } else if (target === 2) {
+    targetNumberDisplay.innerText = 'Two';
+  } else if (target === 3) {
+    targetNumberDisplay.innerText = 'Three';
+  } else if (target === 4) {
+    targetNumberDisplay.innerText = 'Four';
+  } else if (target === 5) {
+    targetNumberDisplay.innerText = 'Five';
+  } else {
+    targetNumberDisplay.innerText = 'Six';
+  }
   
   // Determine if the human or computer wins:
   const humanIsWinner = compareGuesses(currentHumanGuess, computerGuess, target)
-  const winner = humanIsWinner ? 'human' : 'computer'
+  const winner = humanIsWinner ? 'user' : 'computer'
 
   // Update the correct score:
   updateScore(winner);
 
   // Display the winner
   if (humanIsWinner) {
-    guessButton.innerText = 'You Win!!!!!';
+    guessButton.innerText = 'Lucky Guess!';
     guessButton.classList.toggle('winning-text')
   } else {
-    computerWinsDisplay.innerText = 'Computer Wins!!!';
+    computerWinsDisplay.innerText = 'The House Always Wins!';
   }
 
   // winnerDisplay.innerText = humanIsWinner ? 'You win!' : 'Computer wins!';
@@ -63,8 +77,8 @@ nextRoundButton.addEventListener('click', () => {
 
   // Reset the guess input box and the target number display:
   targetNumberDisplay.innerText = '?';
-  guessButton.innerText = 'Make a Guess';
-  humanGuessInput.value = '';
+  guessButton.innerText = 'Place Your Bet';
+  humanGuessInput.value = 1;
   computerGuessDisplay.innerText = '?';
   computerWinsDisplay.innerText = '';
   guessButton.classList.remove('winning-text');
@@ -84,12 +98,12 @@ subtractButton.addEventListener('click', () => {
 });
 
 const handleValueChange = value => {
-  if (value > 0 && value <= 9) {
+  if (value > 1 && value <= 5) {
     subtractButton.removeAttribute('disabled');
     addButton.removeAttribute('disabled');
-  } else if (value > 9) {
+  } else if (value >= 6) {
     addButton.setAttribute('disabled', true);
-  } else if (value <= 0) {
+  } else if (value <= 1) {
     subtractButton.setAttribute('disabled', true);
   }
 }
