@@ -26,17 +26,17 @@ guessButton.addEventListener('click', () => {
   
   //targetNumberDisplay.innerText = target;
   if (target === 1) {
-    targetNumberDisplay.innerHTML = '<i class="fa-solid fa-dice-one"></i>';
+    targetNumberDisplay.innerHTML = '<i class="fa-regular fa-dice-one"></i>';
   } else if (target === 2) {
-    targetNumberDisplay.innerText = 'Two';
+    targetNumberDisplay.innerHTML = '<i class="fa-regular fa-dice-two"></i>';
   } else if (target === 3) {
-    targetNumberDisplay.innerText = 'Three';
+    targetNumberDisplay.innerHTML = '<i class="fa-regular fa-dice-three"></i>';
   } else if (target === 4) {
-    targetNumberDisplay.innerText = 'Four';
+    targetNumberDisplay.innerHTML = '<i class="fa-regular fa-dice-four"></i>';
   } else if (target === 5) {
-    targetNumberDisplay.innerText = 'Five';
+    targetNumberDisplay.innerHTML = '<i class="fa-regular fa-dice-five"></i>';
   } else {
-    targetNumberDisplay.innerText = 'Six';
+    targetNumberDisplay.innerHTML = '<i class="fa-regular fa-dice-six"></i>';
   }
   
   // Determine if the human or computer wins:
