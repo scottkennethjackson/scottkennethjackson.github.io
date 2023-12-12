@@ -81,6 +81,10 @@ nextRoundButton.addEventListener('click', () => {
   computerGuessDisplay.innerText = '?';
   computerWinsDisplay.innerText = '';
   guessButton.classList.remove('winning-text');
+
+  // Reset add and subtract buttons
+  addButton.removeAttribute('disabled');
+  subtractButton.setAttribute('disabled', true);
 });
 
 const addButton = document.getElementById('add');
