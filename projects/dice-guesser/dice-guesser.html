@@ -23,7 +23,8 @@
   <body>
     <div class="game-container">
       <header>
-        <h1>Number Guesser!</h1>
+        <h1>Dice Guessing Game</h1>
+        <p class="subtitle">Closest guess wins!</p>
       </header>
 
       <main>
@@ -35,7 +36,7 @@
         <div class="guessing-area">
           <div class="guess computer-guess">
             <div class="guess-title">
-              <p class="guess-label">King Dice</p>
+              <p class="guess-label">Computer</p>
               <p class="score-label">Score: <span id="computer-score">0</span></p>
             </div>
             <p id="computer-guess">?</p>
@@ -51,12 +52,12 @@
               <button class="number-control left" id="subtract" disabled>-</button>
               <button class="number-control right" id="add">+</button>
             </div>
-            <button class="button" id="guess"><Table>Roll Them Bones</Table></button>
+            <button class="button" id="guess"><Table>Guess</Table></button>
           </div>
         </div>
 
         <div class="next-round-container">
-          <button class="button" id="next-round" disabled>Let It Ride?</button>
+          <button class="button" id="next-round" disabled>Play Again?</button>
         </div>
       </div>
     </main>
