@@ -26,7 +26,7 @@ guessButton.addEventListener('click', () => {
   
   //targetNumberDisplay.innerText = target;
   if (target === 1) {
-    targetNumberDisplay.innerText = 'One';
+    targetNumberDisplay.innerHTML = '<i class="fa-solid fa-dice-one"></i>';
   } else if (target === 2) {
     targetNumberDisplay.innerText = 'Two';
   } else if (target === 3) {
@@ -77,7 +77,7 @@ nextRoundButton.addEventListener('click', () => {
 
   // Reset the guess input box and the target number display:
   targetNumberDisplay.innerText = '?';
-  guessButton.innerText = 'Place Your Bet';
+  guessButton.innerText = 'Roll Them Bones';
   humanGuessInput.value = 1;
   computerGuessDisplay.innerText = '?';
   computerWinsDisplay.innerText = '';
