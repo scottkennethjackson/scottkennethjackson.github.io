@@ -171,24 +171,6 @@ input[type=number]::-webkit-inner-spin-button {
   cursor: default;
 }
 
-.instructions {
-  background-color: #ececec;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.instruction {
-  width: 180px;
-  padding: 2px;
-  text-align: center;
-}
-
-.instructions h3 {
-  font-size: 14px;
-}
-
-
 .winning-text, .winning-text[disabled] {
   color: #ec3636;
   font-weight: 700;
