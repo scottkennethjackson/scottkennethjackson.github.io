@@ -14,9 +14,14 @@ body {
     background-color: black;
 }
 
-.title, .fa-d-and-d {
+.title {
     font-size: 3rem;
     color: red;
+}
+
+.fa-d-and-d {
+    height: 3rem;
+    color: pink;
 }
 
 .container {
