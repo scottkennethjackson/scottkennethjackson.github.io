@@ -11,19 +11,28 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: black;
+    background-color: #121212;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    height: 5rem;
+    object-fit: contain;
 }
 
 .title {
-    font-size: 3rem;
-    color: red;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #979AA4;
+    text-transform: uppercase;
 }
 
-.fa-d-and-d {
-    font-size: 2.5rem;
-}
-
-.container {
+.randomiser {
     height: 10rem;
     width: 490px;
     display: flex;
@@ -62,5 +71,5 @@ body {
 
 #d100:hover,
 #d100:focus {
-    filter: brightness(.9);
+    background-color: #E20000;
 }
