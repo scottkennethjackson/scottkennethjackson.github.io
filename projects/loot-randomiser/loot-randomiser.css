@@ -14,7 +14,8 @@ body {
     background-color: black;
 }
 
-.title {
+.title, .fa-d-and-d {
+    font-size: 3rem;
     color: red;
 }
 
