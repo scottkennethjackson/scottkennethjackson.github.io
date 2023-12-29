@@ -31,6 +31,7 @@ body {
     font-weight: 700;
     color: #979AA4;
     text-transform: uppercase;
+    cursor: default;
 }
 
 .randomiser {
@@ -49,7 +50,6 @@ body {
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    text-transform: capitalize;
 }
 
 #link {
