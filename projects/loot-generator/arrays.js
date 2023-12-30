@@ -6,11 +6,7 @@ const cursed = [
     ['Sword of Vengence', 'magic-items/5505-sword-of-vengeance']
 ];
 
-const common = [
-    ['item 0', 'link 0'],
-    ['item 1', 'link 1'],
-    ['item 2', 'link 2'],
-];
+const common = [];
 
 const consumable = [
     ['Potion of Acid Resistance', 'magic-items/5419-potion-of-resistance'],
@@ -70,15 +66,36 @@ const consumable = [
 ];
 
 const uncommon = [
+    ['Boots of the Winterlands', 'magic-items/4591-boots-of-the-winterlands'],
+    ['Gray Bag of Tricks', 'magic-items/4582-bag-of-tricks'],
+    ['Mithral Armor', 'magic-items/5381-mithral-armor'],
+    ['Periapt of Health', 'magic-items/4692-periapt-of-health'],
+    ['Ring of Warmth', 'magic-items/4736-ring-of-warmth'],
+    ['Ring of Water Walking', 'magic-items/4737-ring-of-water-walking'],
     ['Rod of the Pact Keeper, +1', 'magic-items/11214-rod-of-the-pact-keeper'],
+    ['Rust Bag of Tricks', 'magic-items/4582-bag-of-tricks'],
+    ['Tan Bag of Tricks', 'magic-items/4582-bag-of-tricks'],
     ['Wand of the War Mage, +1', 'magic-items/34712-wand-of-the-war-mage'],
     ['Weapon, +1', 'magic-items/5400-weapon-1']
 ];
 
 const rare = [
+    ['Belt of Dwarvenkind', 'magic-items/4584-belt-of-dwarvenkind'],
     ['Belt of Hill Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
+    ['Elven Chain', 'magic-items/4631-elven-chain'],
     ['Horn of Valhalla, Brass', 'magic-items/5414-horn-of-valhalla'],
     ['Horn of Valhalla, Silver', 'magic-items/5414-horn-of-valhalla'],
+    ['Ring of Acid Resistance', 'magic-items/5420-ring-of-resistance'],
+    ['Ring of Cold Resistance', 'magic-items/5420-ring-of-resistance'],
+    ['Ring of Fire Resistance', 'magic-items/5420-ring-of-resistance'],
+    ['Ring of Force Resistance', 'magic-items/5420-ring-of-resistance'],
+    ['Ring of Lightning Resistance', 'magic-items/5420-ring-of-resistance'],
+    ['Ring of Necrotic Resistance', 'magic-items/5420-ring-of-resistance'],
+    ['Ring of Poison Resistance', 'magic-items/5420-ring-of-resistance'],
+    ['Ring of Psychic Resistance', 'magic-items/5420-ring-of-resistance'],
+    ['Ring of Radiant Resistance', 'magic-items/5420-ring-of-resistance'],
+    ['Ring of Thunder Resistance', 'magic-items/5420-ring-of-resistance'],
+    ['Ring of X-ray Vision', 'magic-items/4738-ring-of-x-ray-vision'],
     ['Rod of the Pact Keeper, +2', 'magic-items/11214-rod-of-the-pact-keeper'],
     ['Wand of the War Mage, +2', 'magic-items/34712-wand-of-the-war-mage'],
     ['Weapon, +2', 'magic-items/5401-weapon-2']
@@ -91,6 +108,7 @@ const veryRare = [
     ['Crystal Ball', 'magic-items/4610-crystal-ball'],
     ['Horn of Valhalla, Bronze', 'magic-items/5414-horn-of-valhalla'],
     ['Rod of the Pact Keeper, +1', 'magic-items/11214-rod-of-the-pact-keeper'],
+    ['Tome of Understanding', 'magic-items/4783-tome-of-understanding'],
     ['Wand of the War Mage, +3', 'magic-items/34712-wand-of-the-war-mage'],
     ['Weapon, +3', 'magic-items/5404-weapon-3']
 ];
@@ -102,5 +120,6 @@ const legendary = [
     ['Crystal Ball of Telepathy', 'magic-items/4610-crystal-ball'],
     ['Crystal Ball of True Seeing', 'magic-items/4610-crystal-ball'],
     ['Horn of Valhalla, Iron', 'magic-items/5414-horn-of-valhalla'],
+    ['Ring of Three Wishes', 'magic-items/4735-ring-of-three-wishes'],
     ['Well of Many Worlds', 'magic-items/4802-well-of-many-worlds']
 ];
