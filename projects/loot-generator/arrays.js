@@ -1,4 +1,10 @@
-const cursed = [];
+const cursed = [
+    ['Armor of Vulnerability', 'magic-items/5376-armor-of-vulnerability'],
+    ['Berserker Axe', 'magic-items/5382-berserker-axe'],
+    ['Demon Armor', 'magic-items/4619-demon-armor'],
+    ['Shield of Missile Attraction', 'magic-items/4754-shield-of-missile-attraction'],
+    ['Sword of Vengence', 'magic-items/5505-sword-of-vengeance']
+];
 
 const common = [
     ['item 0', 'link 0'],
@@ -63,10 +69,38 @@ const consumable = [
     ['Spell Scroll, 9th Level', 'magic-items/5418-spell-scroll']
 ];
 
-const uncommon = [];
+const uncommon = [
+    ['Rod of the Pact Keeper, +1', 'magic-items/11214-rod-of-the-pact-keeper'],
+    ['Wand of the War Mage, +1', 'magic-items/34712-wand-of-the-war-mage'],
+    ['Weapon, +1', 'magic-items/5400-weapon-1']
+];
 
-const rare = [];
+const rare = [
+    ['Belt of Hill Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
+    ['Horn of Valhalla, Brass', 'magic-items/5414-horn-of-valhalla'],
+    ['Horn of Valhalla, Silver', 'magic-items/5414-horn-of-valhalla'],
+    ['Rod of the Pact Keeper, +2', 'magic-items/11214-rod-of-the-pact-keeper'],
+    ['Wand of the War Mage, +2', 'magic-items/34712-wand-of-the-war-mage'],
+    ['Weapon, +2', 'magic-items/5401-weapon-2']
+];
 
-const veryRare = [];
+const veryRare = [
+    ['Belt of Fire Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
+    ['Belt of Frost Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
+    ['Belt of Stone Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
+    ['Crystal Ball', 'magic-items/4610-crystal-ball'],
+    ['Horn of Valhalla, Bronze', 'magic-items/5414-horn-of-valhalla'],
+    ['Rod of the Pact Keeper, +1', 'magic-items/11214-rod-of-the-pact-keeper'],
+    ['Wand of the War Mage, +3', 'magic-items/34712-wand-of-the-war-mage'],
+    ['Weapon, +3', 'magic-items/5404-weapon-3']
+];
 
-const legendary = [];
+const legendary = [
+    ['Belt of Cloud Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
+    ['Belt of Storm Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
+    ['Crystal Ball of Mind Reading', 'magic-items/4610-crystal-ball'],
+    ['Crystal Ball of Telepathy', 'magic-items/4610-crystal-ball'],
+    ['Crystal Ball of True Seeing', 'magic-items/4610-crystal-ball'],
+    ['Horn of Valhalla, Iron', 'magic-items/5414-horn-of-valhalla'],
+    ['Well of Many Worlds', 'magic-items/4802-well-of-many-worlds']
+];
