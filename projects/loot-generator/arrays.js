@@ -190,6 +190,7 @@ const uncommon = [
     ['Saddle of the Cavalier', 'magic-items/5396-saddle-of-the-cavalier'],
     ['Sending Stones', 'magic-items/5402-sending-stones'],
     ['Sentinel Shield', 'magic-items/5403-sentinel-shield'],
+    ['Shield, +1', 'magic-items/4753-shield-1'],
     ['Slippers of Spider Climbing', 'magic-items/4755-slippers-of-spider-climbing'],
     ['Staff of the Adder', 'magic-items/5406-staff-of-the-adder'],
     ['Staff of the Python', 'magic-items/4768-staff-of-the-python'],
@@ -208,6 +209,7 @@ const uncommon = [
 ];
 
 const rare = [
+    ['Armor, +1', 'magic-items/5377-armor-1'],
     ['Belt of Dwarvenkind', 'magic-items/4584-belt-of-dwarvenkind'],
     ['Belt of Hill Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
     ['Elven Chain', 'magic-items/4631-elven-chain'],
@@ -235,11 +237,13 @@ const rare = [
     ['Scroll of Protection Against Fiends', 'magic-items/5398-scroll-of-protection'],
     ['Scroll of Protection Against Plants', 'magic-items/5398-scroll-of-protection'],
     ['Scroll of Protection Against Undead', 'magic-items/5398-scroll-of-protection'],
+    ['Shield, +2', 'magic-items/5157-shield-2'],
     ['Wand of the War Mage, +2', 'magic-items/34712-wand-of-the-war-mage'],
     ['Weapon, +2', 'magic-items/5401-weapon-2']
 ];
 
 const veryRare = [
+    ['Armor, +2', 'magic-items/5378-armor-2'],
     ['Belt of Fire Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
     ['Belt of Frost Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
     ['Belt of Stone Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
@@ -247,12 +251,14 @@ const veryRare = [
     ['Horn of Valhalla, Bronze', 'magic-items/5414-horn-of-valhalla'],
     ['Instrument of the Bards, Anstruth Harp', 'magic-items/5508-instrument-of-the-bards'],
     ['Rod of the Pact Keeper, +1', 'magic-items/11214-rod-of-the-pact-keeper'],
+    ['Shield, +3', 'magic-items/5158-shield-3'],
     ['Tome of Understanding', 'magic-items/4783-tome-of-understanding'],
     ['Wand of the War Mage, +3', 'magic-items/34712-wand-of-the-war-mage'],
     ['Weapon, +3', 'magic-items/5404-weapon-3']
 ];
 
 const legendary = [
+    ['Armor, +3', 'magic-items/5379-armor-3'],
     ['Belt of Cloud Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
     ['Belt of Storm Giant Strength', 'magic-items/5372-belt-of-giant-strength'],
     ['Crystal Ball of Mind Reading', 'magic-items/4610-crystal-ball'],
