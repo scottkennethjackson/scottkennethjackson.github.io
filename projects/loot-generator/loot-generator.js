@@ -33,10 +33,10 @@ const rollLoot = () => {
         linkDisplay.innerHTML = `<a href="https://www.dndbeyond.com/magic-items/4708-potion-of-healing" id="link" target="_blank">View Item</a>`;
     } else if (roll1 <= 42) {
         //console.log('Category: Common');
-        //roll2 = Math.floor(Math.random() * common.length);
+        roll2 = Math.floor(Math.random() * common.length);
 
-        itemDisplay.innerHTML = `You Found a Common Item`;
-        linkDisplay.innerHTML = `<a href="#" id="link"></a>`;
+        itemDisplay.innerHTML = `${common[roll2][0]}`;
+        linkDisplay.innerHTML = `<a href="https://www.dndbeyond.com/${common[roll2][1]}" id="link" target="_blank">View Item</a>`;
     } else if (roll1 <= 67) {
         //console.log('Category: Gold');
         rollGold();
