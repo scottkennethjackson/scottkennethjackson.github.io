@@ -121,7 +121,7 @@ a:active {
   font-family: 'Playfair Display', Georgia, serif;
 }
 
-.hidden {
+.hidden, .invisible {
   visibility: hidden;
 }
 
