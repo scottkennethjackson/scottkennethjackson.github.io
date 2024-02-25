@@ -94,7 +94,7 @@ class Field {
     } else if (whereTo === 'd') {
       this._yplayer +=1 ;
     } else {
-      console.log('Invalid command, try again!!');
+      console.log('Invalid command, try again!!!');
       this.askingUser();
     }
     if (
