@@ -33,13 +33,12 @@ header {
 }
 
 .socials {
-  width: 25%;
   display: flex;
-  justify-content: space-around;
   margin: 1rem auto;
 }
 
 .fa-brands {
+  margin: 0 1rem;
   font-size: 1.5rem;
   color: rgb(8, 20, 58);
 }
