@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/playfair-display/PlayfairDisplay-Black.woff2') format('woff2'),
+        url('../fonts/playfair-display/PlayfairDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+  
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('../fonts/source-sans-3/SourceSans3-Regular.woff2') format('woff2'),
+        url('../fonts/source-sans-3/SourceSans3-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    --color-orange: #f68330;
+    --color-activeorange: #db752c;
+    --color-lightblue: #b4ddd5;
+    --color-midnight: #08143a;
+
+    --font-playfair: "Playfair Display", serif;
+    --font-source: "Source Sans 3", sans-serif;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
