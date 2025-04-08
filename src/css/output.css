@@ -190,14 +190,8 @@
     white-space: nowrap;
     border-width: 0;
   }
-  .absolute {
-    position: absolute;
-  }
-  .top-0 {
-    top: calc(var(--spacing) * 0);
-  }
-  .z-10 {
-    z-index: 10;
+  .fixed {
+    position: fixed;
   }
   .container {
     width: 100%;
@@ -229,8 +223,8 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .snap-start {
-    scroll-snap-align: start;
+  .w-full {
+    width: 100%;
   }
   .flex-col {
     flex-direction: column;
@@ -248,20 +242,6 @@
       margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
-  .space-x-12 {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(calc(var(--spacing) * 12) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(calc(var(--spacing) * 12) * calc(1 - var(--tw-space-x-reverse)));
-    }
-  }
-  .space-x-16 {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(calc(var(--spacing) * 16) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(calc(var(--spacing) * 16) * calc(1 - var(--tw-space-x-reverse)));
-    }
-  }
   .bg-lightblue {
     background-color: var(--color-lightblue);
   }
@@ -270,9 +250,6 @@
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
-  }
-  .pt-16 {
-    padding-top: calc(var(--spacing) * 16);
   }
   .font-playfair {
     font-family: var(--font-playfair);
@@ -342,24 +319,6 @@
       }
     }
   }
-  .md\:space-x-20 {
-    @media (width >= 48rem) {
-      :where(& > :not(:last-child)) {
-        --tw-space-x-reverse: 0;
-        margin-inline-start: calc(calc(var(--spacing) * 20) * var(--tw-space-x-reverse));
-        margin-inline-end: calc(calc(var(--spacing) * 20) * calc(1 - var(--tw-space-x-reverse)));
-      }
-    }
-  }
-  .md\:space-x-26 {
-    @media (width >= 48rem) {
-      :where(& > :not(:last-child)) {
-        --tw-space-x-reverse: 0;
-        margin-inline-start: calc(calc(var(--spacing) * 26) * var(--tw-space-x-reverse));
-        margin-inline-end: calc(calc(var(--spacing) * 26) * calc(1 - var(--tw-space-x-reverse)));
-      }
-    }
-  }
   .md\:text-5xl {
     @media (width >= 48rem) {
       font-size: var(--text-5xl);
@@ -391,15 +350,6 @@
       }
     }
   }
-  .lg\:space-x-24 {
-    @media (width >= 64rem) {
-      :where(& > :not(:last-child)) {
-        --tw-space-x-reverse: 0;
-        margin-inline-start: calc(calc(var(--spacing) * 24) * var(--tw-space-x-reverse));
-        margin-inline-end: calc(calc(var(--spacing) * 24) * calc(1 - var(--tw-space-x-reverse)));
-      }
-    }
-  }
   .lg\:text-6xl {
     @media (width >= 64rem) {
       font-size: var(--text-6xl);
@@ -410,21 +360,6 @@
     @media (width >= 64rem) {
       font-size: var(--text-9xl);
       line-height: var(--tw-leading, var(--text-9xl--line-height));
-    }
-  }
-  .dark\:bg-midnight {
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color-midnight);
-    }
-  }
-  .dark\:fill-white {
-    @media (prefers-color-scheme: dark) {
-      fill: var(--color-white);
-    }
-  }
-  .dark\:text-white {
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-white);
     }
   }
 }
