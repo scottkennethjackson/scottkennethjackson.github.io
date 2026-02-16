@@ -1,0 +1,52 @@
+@import "animate.css";
+@import "tailwindcss";
+
+@font-face {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url('../assets/fonts/Jost/Jost.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Jost Italic';
+    font-style: normal;
+    font-weight: 100 1000;
+    font-display: swap;
+    src: url('../assets/fonts/Jost/Jost-Italic.ttf') format('truetype');
+}
+
+@theme {
+    --color-yellow: #F7C412;
+    --color-dark-yellow: #EDBA08;
+
+    --font-jost: 'Jost', sans-serif;
+    --font-jost-italic: 'Jost Italic', sans-serif;
+
+    --spacing-terminal: 315px;
+    --spacing-terminal-md: 360px;
+    --spacing-terminal-lg: 450px;
+
+    --tracking-scott: 0.32em;
+    --tracking-kenneth: -0.05em;
+    --tracking-jackson: -0.022em
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@utility cursor-blink {
+  animation: blink 1s steps(1) infinite;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
