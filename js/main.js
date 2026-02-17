@@ -1,8 +1,8 @@
 import { outputMessage } from "./terminal.js";
-import { centerCarousel } from "./carousel.js";
+import { carouselLogic } from "./carousel.js";
 
 outputMessage();
-centerCarousel();
+carouselLogic();
 
 // Show/hide sections when button is clicked
 function toggleSection(section) {

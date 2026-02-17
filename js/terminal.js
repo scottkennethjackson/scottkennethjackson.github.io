@@ -9,6 +9,7 @@ export function outputMessage() {
     let i = 0;
     let blinkCount = 0;
     
+    // Start with the cursor blinking before revealing the message
     function startBlink() {
         cursor.classList.add("cursor-blink");
         
@@ -24,6 +25,7 @@ export function outputMessage() {
         }, 500);
     }
     
+    // Type each character of the message with a delay
     function typeNextChar() {
         if (i < message.length) {
             terminalOutput.textContent += message.charAt(i);
