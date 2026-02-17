@@ -1,15 +1,15 @@
-export function bootTerminal() {
-    const text = " I make things on the internet";
+export function outputMessage() {
+    const message = " I make things on the internet";
     const speed = 60;
     const bootBlinks = 1;
     
-    const terminalInput = document.getElementById("terminal-input");
+    const terminalOutput = document.getElementById("terminal-output");
     const cursor = document.getElementById("cursor");
     
     let i = 0;
     let blinkCount = 0;
     
-    function startBootBlink() {
+    function startBlink() {
         cursor.classList.add("cursor-blink");
         
         const blinkInterval = setInterval(() => {
@@ -25,8 +25,8 @@ export function bootTerminal() {
     }
     
     function typeNextChar() {
-        if (i < text.length) {
-            terminalInput.textContent += text.charAt(i);
+        if (i < message.length) {
+            terminalOutput.textContent += message.charAt(i);
             i++;
             setTimeout(typeNextChar, speed);
         } else {
@@ -34,5 +34,5 @@ export function bootTerminal() {
         }
     }
     
-    startBootBlink();
+    startBlink();
 }

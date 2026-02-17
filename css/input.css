@@ -17,12 +17,18 @@
     src: url('../assets/fonts/Jost/Jost-Italic.ttf') format('truetype');
 }
 
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
 @theme {
     --color-yellow: #F7C412;
-    --color-dark-yellow: #EDBA08;
 
     --font-jost: 'Jost', sans-serif;
     --font-jost-italic: 'Jost Italic', sans-serif;
+
+    --inset-shadow-md: inset 0 2px 3px rgba(0, 0, 0, 0.25);
 
     --spacing-terminal: 315px;
     --spacing-terminal-md: 360px;
@@ -33,20 +39,34 @@
     --tracking-jackson: -0.022em
 }
 
-@keyframes blink {
-  0%, 49% { opacity: 1; }
-  50%, 100% { opacity: 0; }
-}
-
 @utility cursor-blink {
   animation: blink 1s steps(1) infinite;
 }
 
-html {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+@utility project-landscape {
+    min-width: 472px;
+    max-width: 472px;
+    height: 354px;
 }
 
-html::-webkit-scrollbar {
+@utility project-portrait {
+    min-width: 177px;
+    max-width: 177px;
+    height: 354px;
+}
+
+@utility project-square {
+    min-width: 354px;
+    max-width: 354px;
+    height: 354px;
+}
+
+html, #carousel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar, #carousel::-webkit-scrollbar {
     display: none;
 }
