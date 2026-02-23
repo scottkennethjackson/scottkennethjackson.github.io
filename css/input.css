@@ -9,24 +9,10 @@
     src: url('../assets/fonts/Jost/Jost.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Jost Italic';
-    font-style: normal;
-    font-weight: 100 1000;
-    font-display: swap;
-    src: url('../assets/fonts/Jost/Jost-Italic.ttf') format('truetype');
-}
-
-@keyframes blink {
-  0%, 49% { opacity: 1; }
-  50%, 100% { opacity: 0; }
-}
-
 @theme {
     --color-yellow: #F7C412;
 
     --font-jost: 'Jost', sans-serif;
-    --font-jost-italic: 'Jost Italic', sans-serif;
 
     --inset-shadow-md: inset 0 2px 3px rgba(0, 0, 0, 0.25);
 
@@ -39,8 +25,13 @@
     --tracking-jackson: -0.022em
 }
 
+@keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
 @utility cursor-blink {
-  animation: blink 1s steps(1) infinite;
+    animation: blink 1s steps(1) infinite;
 }
 
 @utility project-landscape {
@@ -59,6 +50,98 @@
     min-width: 354px;
     max-width: 354px;
     height: 354px;
+}
+
+@layer components {
+    .section-heading {
+        @apply
+            font-jost
+            text-4xl
+            font-black
+            active:text-white
+            uppercase
+            cursor-pointer
+    }
+
+    .collapsible-section {
+        @apply
+            flex
+            justify-center
+            w-full
+            max-h-0
+            overflow-hidden
+            bg-black/5
+            inset-shadow-md
+            transition-all
+            duration-500
+            ease-in-out
+    }
+
+    .project {
+        @apply
+            block
+            overflow-hidden
+            relative
+            project-portrait
+            rounded-[999px]
+            transition-all
+            duration-500
+            ease-in-out
+    }
+
+    .project:hover, .project.is-active {
+        @apply
+            project-square
+            rounded-none
+    }
+
+    .project-img {
+        @apply
+            size-full
+            object-cover
+            grayscale
+            transition-all
+            duration-500
+            ease-in-out
+    }
+
+    .project:hover .project-img, .project.is-active .project-img {
+        @apply
+            grayscale-0
+    }
+
+    .project-overlay {
+        @apply
+            absolute
+            top-0
+            invisible
+            flex
+            flex-col
+            items-center
+            justify-center
+            p-6
+            size-full
+            text-sm
+            text-shadow-sm/20
+            bg-black/60
+            opacity-0
+            transition-all
+            duration-500
+            ease-in-out
+    }
+
+    .project:hover .project-overlay, .project.is-active .project-overlay {
+        @apply
+            visible
+            opacity-100
+    }
+}
+
+@media (width >= 40rem) {
+    .project:hover, .project.is-active {
+        @apply
+            project-landscape
+    }
 }
 
 html, #carousel {
