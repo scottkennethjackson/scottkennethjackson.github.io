@@ -3588,6 +3588,7 @@
     --color-black: #000000;
     --color-white: #FFFFFF;
     --spacing: 0.25rem;
+    --container-xs: 20rem;
     --container-sm: 24rem;
     --container-md: 28rem;
     --text-xs: 0.75rem;
@@ -3796,6 +3797,9 @@
   }
   .container {
     width: 100%;
+    @media (width >= 30rem) {
+      max-width: 30rem;
+    }
     @media (width >= 40rem) {
       max-width: 40rem;
     }
@@ -3832,17 +3836,8 @@
     width: calc(var(--spacing) * 14);
     height: calc(var(--spacing) * 14);
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
   .h-6 {
     height: calc(var(--spacing) * 6);
-  }
-  .h-12 {
-    height: calc(var(--spacing) * 12);
-  }
-  .h-14 {
-    height: calc(var(--spacing) * 14);
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
@@ -3861,6 +3856,9 @@
   }
   .w-sm {
     width: var(--container-sm);
+  }
+  .w-xs {
+    width: var(--container-xs);
   }
   .max-w-87 {
     max-width: calc(var(--spacing) * 87);
@@ -3973,9 +3971,6 @@
   }
   .fill-white {
     fill: var(--color-white);
-  }
-  .fill-yellow {
-    fill: var(--color-yellow);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -4095,11 +4090,6 @@
       fill: var(--color-gray-400);
     }
   }
-  .active\:fill-white {
-    &:active {
-      fill: var(--color-white);
-    }
-  }
   .active\:fill-yellow {
     &:active {
       fill: var(--color-yellow);
@@ -4108,11 +4098,6 @@
   .active\:text-gray-400 {
     &:active {
       color: var(--color-gray-400);
-    }
-  }
-  .active\:text-white {
-    &:active {
-      color: var(--color-white);
     }
   }
   .active\:text-yellow {

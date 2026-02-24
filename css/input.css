@@ -10,6 +10,8 @@
 }
 
 @theme {
+    --breakpoint-xs: 30rem;
+    
     --color-black: #000000;
     --color-white: #FFFFFF;
     --color-yellow: #F7C412;
