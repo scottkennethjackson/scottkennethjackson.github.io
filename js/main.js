@@ -1,10 +1,12 @@
 import { outputMessage } from "./terminal.js";
 import { carouselLogic } from "./carousel.js";
+import { validateForm } from "./contact-form.js";
 
 outputMessage();
 carouselLogic();
+validateForm();
 
-// Show/hide sections when button is clicked
+// Collapse/expand sections when heading button is clicked
 function toggleSection(section) {
     if (section.style.maxHeight) {
         section.style.maxHeight = null;
@@ -23,4 +25,4 @@ document.querySelectorAll("[data-toggle]").forEach(button => {
 
 // Set current year in copyright
 const currentYear = new Date().getFullYear();
-document.getElementById("copyright").innerHTML = `&copy; 2023-${currentYear} Scott Kenneth Jackson`;
+document.getElementById("copyright").innerHTML = `&copy; ${currentYear} Scott Kenneth Jackson`;

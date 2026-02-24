@@ -10,6 +10,8 @@
 }
 
 @theme {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
     --color-yellow: #F7C412;
 
     --font-jost: 'Jost', sans-serif;

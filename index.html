@@ -34,31 +34,30 @@
           </h2>
         </div>
       </div>
-      <a href="#main" class="absolute bottom-0">
-        <button class="group animate__animated animate__bounce animate__delay-3s cursor-pointer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 640 640"
-            class="size-12 sm:size-10 md:size-11 lg:size-14 group-active:fill-white"
-          >
-            <path d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/>
-          </svg>
-        </button>
+      <a href="#main" class="group absolute bottom-0 animate__animated animate__bounce animate__delay-3s cursor-pointer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 640"
+          class="size-12 sm:size-10 md:size-11 lg:size-14 group-active:fill-white"
+        >
+          <path d="M297.4 470.6C309.9 483.1 330.2 483.1 342.7 470.6L534.7 278.6C547.2 266.1 547.2 245.8 534.7 233.3C522.2 220.8 501.9 220.8 489.4 233.3L320 402.7L150.6 233.4C138.1 220.9 117.8 220.9 105.3 233.4C92.8 245.9 92.8 266.2 105.3 278.7L297.3 470.7z"/>
+        </svg>
       </a>
     </header>
     <main id="main" class="flex flex-col justify-center items-center space-y-4 min-h-screen">
       <div class="flex flex-col items-center w-full">
         <button data-toggle="about" class="section-heading">About</button>
         <section id="about" class="collapsible-section">
-          <div class="py-8 px-4 mx-auto container">
-            <div class="mb-4 space-y-4">
+          <div class="py-8 px-4 mx-auto space-y-8 container h-full">
+            <div class="space-y-4">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet velit ac est auctor efficitur sagittis sed lorem. Donec euismod venenatis metus non elementum. Suspendisse sed nulla luctus, mattis eros ac, bibendum enim. Nullam placerat ultrices justo nec blandit. Nam ornare porta molestie. Suspendisse eget justo eu turpis fringilla pulvinar. Morbi porta eros vel odio euismod finibus. Sed eget metus dapibus, accumsan augue ac, pretium dolor. Phasellus at laoreet purus. Vivamus nec nulla ut dui vestibulum malesuada. Mauris congue faucibus fringilla. Vestibulum ut ante mi. Mauris finibus turpis justo, vitae scelerisque nisl consectetur nec. Mauris nibh nisl, aliquam nec mi nec, tristique placerat purus.</p>
               <p>Etiam placerat ornare felis id efficitur. Vivamus erat risus, feugiat et ultricies id, semper vel erat. Quisque nec justo eget enim vehicula hendrerit in quis turpis. Donec vehicula lorem sed elit sollicitudin consectetur. Ut dignissim cursus ex vel tincidunt. Phasellus erat diam, tristique nec fringilla pellentesque, accumsan nec velit. Vestibulum ac tortor non lorem gravida iaculis eu eget mauris.</p>
               <p>Duis congue aliquam felis, sit amet posuere tortor euismod et. Sed sit amet pharetra enim. Quisque lacinia varius tellus eget pulvinar. Duis congue neque eu nunc semper, sit amet convallis eros ultrices. Donec dignissim nulla vitae nisi venenatis, id tincidunt tellus finibus. Phasellus ultricies vitae diam a mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent et imperdiet urna. Aliquam vitae nunc sit amet metus tincidunt volutpat id in magna.</p>
             </div>
-            <div class="flex justify-center py-8 space-x-6">
+
+            <div class="flex justify-center space-x-6">
               <a href="https://www.credly.com/badges/7c03ee90-2580-48b9-8314-898e70e225cc" target="_blank">
-                <img src="./assets/badges/introduction-to-programming-using-html-and-css.png" alt="Introduction to Programming badge" class="h-16">
+                <img src="./assets/badges/introduction-to-programming-using-html-and-css.png" alt="Introduction to Programming badge" class="h-18">
               </a>
               <a href="https://www.credly.com/badges/62163a34-7964-453e-8972-1216df74fcf9" target="_blank">
                 <img src="./assets/badges/network-technician-career-path.png" alt="Network Technician badge" class="h-16">
@@ -112,62 +111,89 @@
       <div class="flex flex-col items-center w-full">
         <button data-toggle="contact" class="section-heading">Contact</button>
         <section id="contact" class="collapsible-section">
-          <form
-            action="https://formspree.io/f/xbdaknwb"
-            class="fs-form"
-            target="formspree-response"
-            method="POST"
-          >
-            <div class="fs-field">
-              <label class="fs-label" for="name">Your Name</label>
-              <input class="fs-input" id="name" name="name" required />
-            </div>
-            <div class="fs-field">
-              <label class="fs-label" for="email">Email</label>
-              <input class="fs-input" id="email" name="email" required />
-              <p class="fs-description">
-                This will help me respond to your query via an email.
-              </p>
-            </div>
-            <div class="fs-field">
-              <label class="fs-label" for="message">Message</label>
-              <textarea
-                class="fs-textarea"
-                id="message"
-                name="message"
-                required
-              ></textarea>
-              <p class="fs-description">What would you like to discuss?</p>
-            </div>
-            <div class="fs-button-group">
-              <button class="fs-button" type="submit">Submit</button>
-            </div>
-          </form>
-          <iframe name="formspree-response" class="w-96 h-64 bg-red-400"></iframe>
+          <div class="flex flex-col items-center px-4 p-8 container h-full">
+            <form
+              action="https://formspree.io/f/xbdaknwb"
+              class="flex flex-col space-y-4 w-sm sm:w-md"
+              target="formspree-redirect"
+              method="POST"
+            >
+              <div id="postable-content" class="animate__animated space-y-2">
+                <div class="field-wrapper flex flex-col relative">
+                  <label class="text-sm font-bold" for="name">Name:</label>
+                  <input name="name" id="name" class="animate__animated border-2 border-gray-300 rounded p-2 bg-white" required />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"
+                    class="hidden absolute top-8 right-1 h-6 bg-white fill-green-600"
+                  >
+                    <path d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/>
+                  </svg>
+                  <p class="invisible text-sm font-medium text-red-600">Field cannot be empty</p>
+                </div>
+
+                <div class="field-wrapper flex flex-col relative">
+                  <label class="text-sm font-bold" for="email">Email:</label>
+                  <input type="email" name="email" id="email" class="animate__animated border-2 border-gray-300 rounded p-2 bg-white" required />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"
+                    class="hidden absolute top-8 right-1 h-6 bg-white fill-green-600"
+                  >
+                    <path d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/>
+                  </svg>
+                  <p class="invisible text-sm font-medium text-red-600">Please enter a valid email address</p>
+                </div>
+
+                <div class="field-wrapper flex flex-col relative">
+                  <label class="text-sm font-bold" for="message">Message:</label>
+                  <textarea name="message" id="message" class="animate__animated border-2 border-gray-300 rounded p-2 bg-white resize-none" rows="4" required></textarea>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"
+                    class="hidden absolute top-8 right-1 h-6 bg-white fill-green-600"
+                  >
+                    <path d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/>
+                  </svg>
+                  <p class="invisible text-sm font-medium text-red-600">Field cannot be empty</p>
+                </div>
+              </div>
+
+              <p id="send-confirmation" class="invisible font-bold text-center">Message sent. Thank you!</p>
+
+              <button class="group flex items-center mx-auto space-x-2 px-4 py-2 rounded-full" type="submit" disabled>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  class="h-6"
+                >
+                  <path d="M322.5 351.7L523.4 150.9L391 520.3L322.5 351.7zM489.4 117L288.6 317.8L120 249.3L489.4 117zM70.1 280.8L275.9 364.4L359.5 570.2C364.8 583.3 377.6 591.9 391.8 591.9C406.5 591.9 419.6 582.7 424.6 568.8L602.6 72C606.1 62.2 603.6 51.4 596.3 44C589 36.6 578.1 34.2 568.3 37.7L71.4 215.7C57.5 220.7 48.3 233.8 48.3 248.5C48.3 262.7 56.9 275.5 70 280.8z"/>
+                </svg>
+                <span class="font-jost text-xl font-bold uppercase">Send</span>
+              </button>
+            </form>
+            <iframe name="formspree-redirect" class="hidden"></iframe>
+          </div>
         </section>
       </div>
-      <div class="mt-4 space-x-2">
-        <a href="https://www.linkedin.com/in/scott-kenneth-jackson/" target="_blank">
-          <button class="group cursor-pointer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 640 640"
-              class="size-14 group-active:fill-white"
-            >
-              <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
-            </svg>
-          </button>
+      <div class="flex mt-4 space-x-2">
+        <a href="https://www.linkedin.com/in/scott-kenneth-jackson/" target="_blank" class="group">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"
+            class="size-14 group-active:fill-white"
+          >
+            <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+          </svg>
         </a>
-        <a href="https://github.com/scottkennethjackson" target="_blank">
-          <button class="group cursor-pointer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 640 640"
-              class="size-14 group-active:fill-white"
-            >
-              <path d="M544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160zM361.8 471.7C361.8 469.9 361.8 465.7 361.9 460.1C362 448.7 362 431.3 362 416.4C362 400.8 356.8 390.9 350.7 385.7C387.7 381.6 426.7 376.5 426.7 312.6C426.7 294.4 420.2 285.3 409.6 273.6C411.3 269.3 417 251.6 407.9 228.6C394 224.3 362.2 246.5 362.2 246.5C335.6 239 305.6 239 279 246.5C279 246.5 247.2 224.3 233.3 228.6C224.2 251.5 229.8 269.2 231.6 273.6C221 285.3 216 294.4 216 312.6C216 376.2 253.3 381.6 290.3 385.7C285.5 390 281.2 397.4 279.7 408C270.2 412.3 245.9 419.7 231.4 394.1C222.3 378.3 205.9 377 205.9 377C189.7 376.8 204.8 387.2 204.8 387.2C215.6 392.2 223.2 411.4 223.2 411.4C232.9 441.1 279.3 431.1 279.3 431.1C279.3 440.1 279.4 452.8 279.4 461.7C279.4 466.5 279.5 470.3 279.5 471.7C279.5 476 276.5 481.2 268 479.7C202 457.6 155.8 394.8 155.8 321.4C155.8 229.6 226 159.9 317.8 159.9C409.6 159.9 484 229.6 484 321.4C484.1 394.8 439.3 457.7 373.3 479.7C364.9 481.2 361.8 476 361.8 471.7zM271.3 416.9C271.1 415.4 272.4 414.1 274.3 413.7C276.2 413.5 278 414.3 278.2 415.6C278.5 416.9 277.2 418.2 275.2 418.6C273.3 419 271.5 418.2 271.3 416.9zM262.2 420.1C260 420.3 258.5 419.2 258.5 417.7C258.5 416.4 260 415.3 262 415.3C263.9 415.1 265.7 416.2 265.7 417.7C265.7 419 264.2 420.1 262.2 420.1zM247.9 417.9C246 417.5 244.7 416 245.1 414.7C245.5 413.4 247.5 412.8 249.2 413.2C251.2 413.8 252.5 415.3 252 416.6C251.6 417.9 249.6 418.5 247.9 417.9zM235.4 410.6C233.9 409.3 233.5 407.4 234.5 406.5C235.4 405.4 237.3 405.6 238.8 407.1C240.1 408.4 240.6 410.4 239.7 411.2C238.8 412.3 236.9 412.1 235.4 410.6zM226.9 400.6C225.8 399.1 225.8 397.4 226.9 396.7C228 395.8 229.7 396.5 230.6 398C231.7 399.5 231.7 401.3 230.6 402.1C229.7 402.7 228 402.1 226.9 400.6zM220.6 391.8C219.5 390.5 219.3 389 220.2 388.3C221.1 387.4 222.6 387.9 223.7 388.9C224.8 390.2 225 391.7 224.1 392.4C223.2 393.3 221.7 392.8 220.6 391.8zM214.6 385.4C213.3 384.8 212.7 383.7 213.1 382.8C213.5 382.2 214.6 381.9 215.9 382.4C217.2 383.1 217.8 384.2 217.4 385C217 385.9 215.7 386.1 214.6 385.4z"/>
-            </svg>
-          </button>
+        <a href="https://github.com/scottkennethjackson" target="_blank" class="group">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"
+            class="size-14 group-active:fill-white"
+          >
+            <path d="M544 160C544 124.7 515.3 96 480 96L160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160zM361.8 471.7C361.8 469.9 361.8 465.7 361.9 460.1C362 448.7 362 431.3 362 416.4C362 400.8 356.8 390.9 350.7 385.7C387.7 381.6 426.7 376.5 426.7 312.6C426.7 294.4 420.2 285.3 409.6 273.6C411.3 269.3 417 251.6 407.9 228.6C394 224.3 362.2 246.5 362.2 246.5C335.6 239 305.6 239 279 246.5C279 246.5 247.2 224.3 233.3 228.6C224.2 251.5 229.8 269.2 231.6 273.6C221 285.3 216 294.4 216 312.6C216 376.2 253.3 381.6 290.3 385.7C285.5 390 281.2 397.4 279.7 408C270.2 412.3 245.9 419.7 231.4 394.1C222.3 378.3 205.9 377 205.9 377C189.7 376.8 204.8 387.2 204.8 387.2C215.6 392.2 223.2 411.4 223.2 411.4C232.9 441.1 279.3 431.1 279.3 431.1C279.3 440.1 279.4 452.8 279.4 461.7C279.4 466.5 279.5 470.3 279.5 471.7C279.5 476 276.5 481.2 268 479.7C202 457.6 155.8 394.8 155.8 321.4C155.8 229.6 226 159.9 317.8 159.9C409.6 159.9 484 229.6 484 321.4C484.1 394.8 439.3 457.7 373.3 479.7C364.9 481.2 361.8 476 361.8 471.7zM271.3 416.9C271.1 415.4 272.4 414.1 274.3 413.7C276.2 413.5 278 414.3 278.2 415.6C278.5 416.9 277.2 418.2 275.2 418.6C273.3 419 271.5 418.2 271.3 416.9zM262.2 420.1C260 420.3 258.5 419.2 258.5 417.7C258.5 416.4 260 415.3 262 415.3C263.9 415.1 265.7 416.2 265.7 417.7C265.7 419 264.2 420.1 262.2 420.1zM247.9 417.9C246 417.5 244.7 416 245.1 414.7C245.5 413.4 247.5 412.8 249.2 413.2C251.2 413.8 252.5 415.3 252 416.6C251.6 417.9 249.6 418.5 247.9 417.9zM235.4 410.6C233.9 409.3 233.5 407.4 234.5 406.5C235.4 405.4 237.3 405.6 238.8 407.1C240.1 408.4 240.6 410.4 239.7 411.2C238.8 412.3 236.9 412.1 235.4 410.6zM226.9 400.6C225.8 399.1 225.8 397.4 226.9 396.7C228 395.8 229.7 396.5 230.6 398C231.7 399.5 231.7 401.3 230.6 402.1C229.7 402.7 228 402.1 226.9 400.6zM220.6 391.8C219.5 390.5 219.3 389 220.2 388.3C221.1 387.4 222.6 387.9 223.7 388.9C224.8 390.2 225 391.7 224.1 392.4C223.2 393.3 221.7 392.8 220.6 391.8zM214.6 385.4C213.3 384.8 212.7 383.7 213.1 382.8C213.5 382.2 214.6 381.9 215.9 382.4C217.2 383.1 217.8 384.2 217.4 385C217 385.9 215.7 386.1 214.6 385.4z"/>
+          </svg>
       </div>
     </main>
     <footer class="absolute bottom-0 w-full">
