@@ -8,17 +8,20 @@ validateForm();
 
 // Collapse/expand sections when heading button is clicked
 function toggleSection(section) {
-    if (section.style.maxHeight) {
+    const isOpen = section.style.maxHeight;
+
+    if (isOpen) {
         section.style.maxHeight = null;
+        section.setAttribute("inert", "")
     } else {
         section.style.maxHeight = section.scrollHeight + "px";
+        section.removeAttribute("inert");
     }
 }
 
 document.querySelectorAll("[data-toggle]").forEach(button => {
     button.addEventListener("click", () => {
-        const targetId = button.dataset.toggle;
-        const section = document.getElementById(targetId);
+        const section = document.getElementById(button.dataset.toggle);
         toggleSection(section);
     });
 });

@@ -3588,9 +3588,6 @@
     --color-black: #000000;
     --color-white: #FFFFFF;
     --spacing: 0.25rem;
-    --container-xs: 20rem;
-    --container-sm: 24rem;
-    --container-md: 28rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
@@ -3854,11 +3851,8 @@
   .w-full {
     width: 100%;
   }
-  .w-sm {
-    width: var(--container-sm);
-  }
-  .w-xs {
-    width: var(--container-xs);
+  .w-terminal {
+    width: var(--spacing-terminal);
   }
   .max-w-87 {
     max-width: calc(var(--spacing) * 87);
@@ -3974,9 +3968,6 @@
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
-  }
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -4111,9 +4102,9 @@
       height: calc(var(--spacing) * 10);
     }
   }
-  .sm\:w-md {
+  .sm\:w-terminal-md {
     @media (width >= 40rem) {
-      width: var(--container-md);
+      width: var(--spacing-terminal-md);
     }
   }
   .sm\:space-y-4 {
@@ -4129,6 +4120,11 @@
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 11);
       height: calc(var(--spacing) * 11);
+    }
+  }
+  .md\:w-terminal-lg {
+    @media (width >= 48rem) {
+      width: var(--spacing-terminal-lg);
     }
   }
   .md\:max-w-116 {
@@ -4335,6 +4331,9 @@ html, #carousel {
 }
 html::-webkit-scrollbar, #carousel::-webkit-scrollbar {
   display: none;
+}
+.collabsible-section[inert] {
+  pointer-events: none;
 }
 @property --tw-space-y-reverse {
   syntax: "*";

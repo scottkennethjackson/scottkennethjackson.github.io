@@ -157,3 +157,7 @@ html, #carousel {
 html::-webkit-scrollbar, #carousel::-webkit-scrollbar {
     display: none;
 }
+
+.collabsible-section[inert] {
+    pointer-events: none;
+}
