@@ -13,6 +13,7 @@
     --breakpoint-xs: 30rem;
     
     --color-black: #000000;
+    --color-midnight: #08143A;
     --color-white: #FFFFFF;
     --color-yellow: #F7C412;
 
@@ -63,6 +64,7 @@
             text-4xl
             font-black
             active:text-white
+            dark:active:text-yellow
             uppercase
             cursor-pointer
     }
@@ -127,7 +129,7 @@
             size-full
             text-sm
             text-shadow-sm/20
-            bg-black/60
+            bg-black/70
             opacity-0
             transition-all
             duration-500
@@ -138,6 +140,16 @@
         @apply
             visible
             opacity-100
+    }
+
+    .input {
+        @apply
+            p-2
+            dark:text-black
+            bg-white
+            border-2
+            border-gray-300
+            rounded
     }
 }
 
