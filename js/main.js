@@ -21,10 +21,38 @@ function toggleSection(section, button) {
     }
 }
 
+function closeSection(section, button) {
+    if (section.style.maxHeight) {
+        section.style.maxHeight = null;
+        section.setAttribute("inert", "");
+        button.classList.remove("text-white", "dark:text-yellow");
+    }
+}
+
+function openSection(section, button) {
+    if (!section.style.maxHeight) {
+        section.style.maxHeight = section.scrollHeight + "px";
+        section.removeAttribute("inert");
+        button.classList.add("text-white", "dark:text-yellow");
+    }
+}
+
 document.querySelectorAll("[data-toggle]").forEach(button => {
     button.addEventListener("click", () => {
         const section = document.getElementById(button.dataset.toggle);
-        toggleSection(section, button);
+        const isOpen = !!section.style.maxHeight;
+
+        if (isOpen) {
+            closeSection(section, button);
+            return;
+        }
+
+        document.querySelectorAll("[data-toggle]").forEach(otherButton => {
+            const otherSection = document.getElementById(otherButton.dataset.toggle);
+            closeSection(otherSection, otherButton);
+        });
+
+        openSection(section, button);
     });
 });
 
