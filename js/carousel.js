@@ -1,7 +1,10 @@
 export function carouselLogic() {
     // Center the carousel on page load
     const carousel = document.getElementById("carousel");
-    carousel.scrollLeft = carousel.scrollWidth / 2 - carousel.clientWidth / 2;
+    
+    requestAnimationFrame(() => {
+        carousel.scrollLeft = carousel.scrollWidth / 2 - carousel.clientWidth / 2;
+    });
 
     // For touch devices, toggle the overlay on tap instead of hover
     const prefersTouch = window.matchMedia('(pointer: coarse)').matches;
