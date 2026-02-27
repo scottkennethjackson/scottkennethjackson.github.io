@@ -13,11 +13,11 @@ function toggleSection(section, button) {
     if (isOpen) {
         section.style.maxHeight = null;
         section.setAttribute("inert", "")
-        button.classList.remove("text-white", "dark:text-yellow");
+        button.classList.remove("text-white", "dark:text-main");
     } else {
         section.style.maxHeight = section.scrollHeight + "px";
         section.removeAttribute("inert");
-        button.classList.add("text-white", "dark:text-yellow");
+        button.classList.add("text-white", "dark:text-main");
     }
 }
 
@@ -25,7 +25,7 @@ function closeSection(section, button) {
     if (section.style.maxHeight) {
         section.style.maxHeight = null;
         section.setAttribute("inert", "");
-        button.classList.remove("text-white", "dark:text-yellow");
+        button.classList.remove("text-white", "dark:text-main");
     }
 }
 
@@ -33,7 +33,7 @@ function openSection(section, button) {
     if (!section.style.maxHeight) {
         section.style.maxHeight = section.scrollHeight + "px";
         section.removeAttribute("inert");
-        button.classList.add("text-white", "dark:text-yellow");
+        button.classList.add("text-white", "dark:text-main");
     }
 }
 

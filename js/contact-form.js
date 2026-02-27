@@ -8,7 +8,7 @@ export function validateForm() {
 
         const invalidClasses = ["animate__headShake", "border-red-600", "focus:ring-2", "focus:ring-red-600"];
         const grayBorder = "border-gray-300";
-        const enabledClasses = ["text-white", "dark:text-black", "active:text-yellow", "dark:active:text-white", "bg-black", "dark:bg-yellow", "cursor-pointer", "fill-white", "dark:fill-black", "active:fill-yellow", "dark:active:fill-white"];
+        const enabledClasses = ["text-white", "dark:text-black", "active:text-main", "dark:active:text-white", "bg-black", "dark:bg-main", "cursor-pointer", "fill-white", "dark:fill-black", "active:fill-main", "dark:active:fill-white"];
         const disabledClasses = ["text-gray-400", "active:text-gray-400", "bg-gray-300", "cursor-not-allowed", "fill-gray-400", "active:fill-gray-400"];
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

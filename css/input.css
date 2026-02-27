@@ -13,9 +13,9 @@
     --breakpoint-xs: 30rem;
     
     --color-black: #000000;
-    --color-midnight: #08143A;
+    --color-dark: #033756;
+    --color-main: #F7C412;
     --color-white: #FFFFFF;
-    --color-yellow: #F7C412;
 
     --font-jost: 'Jost', sans-serif;
 
@@ -64,7 +64,7 @@
             text-4xl
             font-black
             active:text-white
-            dark:active:text-yellow
+            dark:active:text-main
             uppercase
             cursor-pointer
     }
