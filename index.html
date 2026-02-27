@@ -9,12 +9,17 @@
 
     <title>Scott Kenneth Jackson</title>
 
-    <link rel="stylesheet" href="./css/output.css">
-
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/icons/favicon_io/site.webmanifest">
+
+    <link rel="preload" href="/assets/fonts/Jost/Jost.ttf" as="font" type="font/ttf" crossorigin>
+
+    <link rel="stylesheet" href="./css/output.css" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="./css/output.css">
+    </noscript>
   </head>
   <body class="relative dark:text-white bg-main dark:bg-dark dark:fill-white">
     <header class="flex relative justify-center items-center w-full min-h-screen">
@@ -34,7 +39,7 @@
           </h2>
         </div>
       </div>
-      <a href="#main" class="group absolute bottom-0 animate__animated animate__bounce animate__delay-3s cursor-pointer">
+      <a href="#main" class="group absolute bottom-0 animate__animated animate__bounce animate__delay-3s cursor-pointer" aria-label="Skip to main content">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 640 640"
@@ -51,22 +56,40 @@
           <div class="py-8 px-4 space-y-8 w-full max-w-5xl h-full">
             <div class="space-y-4 text-justify">
               <p class="font-bold">Hi! My name's Scott. I'm a Software Engineer, and I work at the BBC as part of their backend Metadata Delivery team.</p>
-              <p>I've taken quite the circuitous route to get where I am today. At university, I studied Film & Media and had dreams of working in television. After graduating, however, one thing led to another and I found myself working in the beer industry, in sales and events. I did this for 13 years and was very happy — until 2020.</p>
-              <p>The pandemic hit the hospitality industry pretty hard, especially the independent sector where I worked. A lot of businesses closed and many people lost their jobs, and I unfortunately was one of them. It was a very scary time, but also a fantastic opportunity for me to re-evaluate my career path.</p>
+              <p>I've taken quite a circuitous route to get where I am today. I studied Film & Media at university and had dreams of working in television. After graduating, however, one thing led to another and I found myself working in the beer industry instead, in sales and events. I did this for 13 years and was very happy — until 2020.</p>
+              <p>The pandemic hit the hospitality industry pretty hard, especially the independent sector where I worked. A lot of businesses closed and a lot of people lost their jobs, and I unfortunately was one of them. It was a very scary time, but also a fantastic opportunity for me to re-evaluate my career path.</p>
               <p>I began teaching myself to code using an online <a href="https://roadmap.sh/full-stack" target="_blank" class="link">Full Stack Developer roadmap</a>, and in 2022 I became fully-certified as a Microsoft Technology Associate. I started developing my personal portfolio, building front-end applications using HTML, Tailwind, JavaScript and React, alongside other projects that utilised backend SQL databases.</p>
-              <p>In 2024, my journey came full circle, and I returned to the beer industry — this time as a PHP/WordPress Developer. My first job involved working with the design team at <a href="https://sureshotbrew.com/" target="_blank" class="link">Sureshot Brewery</a> to rebuild their website from the ground up. It was a very daunting task but also very exciting, and provided the perfect opportunity to showcase everything I'd learned.</p>
-              <p>Later that year, I joined the BBC as an Early Careers Software Apprentice and began studying towards a BSc in <a href="https://business.open.ac.uk/apprenticeships/digital-technology-solutions-degree" target="_blank" class="link">Digital & Technology Solutions</a> with the Open University. And that's where I am now. I will finish my apprenticeship in 2027, after which I aim to move into a full-time Developer role. From there, I’ll continue to develop my career, expanding my knowledge and working to build software that has tangible, real-world impact.</p>
+              <p>In 2024, my journey came full circle, and I returned to the beer industry — this time as a PHP/WordPress Developer. My first job involved working with the design team at <a href="https://sureshotbrew.com/" target="_blank" class="link">Sureshot Brewery</a> to rebuild their website from the ground up. It was a very daunting task but also very exciting, and provided the perfect opportunity for me to showcase everything I'd learned.</p>
+              <p>Later that year, I joined the BBC as an Early Careers Software Apprentice and began studying towards a BSc in <a href="https://business.open.ac.uk/apprenticeships/digital-technology-solutions-degree" target="_blank" class="link">Digital & Technology Solutions</a> with the Open University. And that's where I am now. I will finish my apprenticeship in 2027, after which I aim to move into a full-time Developer role. From there, I’ll continue to develop my career, expanding my knowledge and working to build software that has a tangible, real-world impact.</p>
             </div>
 
             <div class="flex justify-center">
               <a href="https://www.credly.com/badges/7c03ee90-2580-48b9-8314-898e70e225cc" target="_blank" class="me-5">
-                <img src="./assets/badges/introduction-to-programming-using-html-and-css.png" alt="Introduction to Programming badge" class="h-16.5">
+                <img
+                  src="./assets/badges/introduction-to-programming-using-html-and-css.png"
+                  alt="Introduction to Programming badge"
+                  width="600"
+                  height="600"
+                  class="w-auto h-16.5"
+                >
               </a>
               <a href="https://www.credly.com/badges/62163a34-7964-453e-8972-1216df74fcf9" target="_blank" class="me-6">
-                <img src="./assets/badges/network-technician-career-path.png" alt="Network Technician badge" class="h-16">
+                <img
+                  src="./assets/badges/network-technician-career-path.png"
+                  alt="Network Technician badge"
+                  width="600"
+                  height="600"
+                  class="w-auto h-16"
+                >
               </a>
               <a href="https://www.credly.com/badges/347b8935-51ab-4cc9-9841-7dded28a0681" target="_blank">
-                <img src="./assets/badges/cyber-threat-management.png" alt="Cyber Threat Management badge" class="h-16">
+                <img
+                  src="./assets/badges/cyber-threat-management.png"
+                  alt="Cyber Threat Management badge"
+                  width="600"
+                  height="600"
+                  class="w-auto h-16"
+                >
               </a>
             </div>
           </div>
@@ -78,7 +101,11 @@
           <div id="carousel"class="overflow-x-auto scroll-smooth flex py-8 px-4 space-x-4 h-full">
             <a href="https://scottkennethjackson-dmtools.vercel.app/" target="_blank" class="project" data-project>
               <img
-                src="./assets/images/dm-tools.png" alt="DM Tools homepage" class="project-img"
+                src="./assets/images/dm-tools.png"
+                alt="DM Tools homepage"
+                width="1992"
+                height="1494"
+                class="project-img"
               >
               <div class="project-overlay">
                 <h3 class="font-jost text-lg font-bold text-main uppercase">DM Tools</h3>
@@ -100,7 +127,11 @@
 
             <a href="https://scottkennethjackson-gazetteer.vercel.app/" target="_blank" class="project" data-project>
               <img
-                src="./assets/images/gazetteer.png" alt="Gazetteer homepage" class="project-img"
+                src="./assets/images/gazetteer.png"
+                alt="Gazetteer homepage"
+                width="1992"
+                height="1494"
+                class="project-img"
               >
               <div class="project-overlay">
                 <h3 class="font-jost text-lg font-bold text-main uppercase">Gazetteer</h3>
@@ -122,7 +153,11 @@
 
             <a href="https://scottkennethjackson-mixtape.vercel.app/" target="_blank" class="project" data-project>
               <img
-                src="./assets/images/mixtape.png" alt="Mixtape homepage" class="project-img"
+                src="./assets/images/mixtape.png"
+                alt="Mixtape homepage"
+                width="1992"
+                height="1494"
+                class="project-img"
               >
               <div class="project-overlay">
                 <h3 class="font-jost text-lg font-bold text-main uppercase">Mixtape</h3>
@@ -213,7 +248,7 @@
         </section>
       </div>
       <div class="flex mt-4 space-x-2">
-        <a href="https://www.linkedin.com/in/scott-kenneth-jackson/" target="_blank" class="group relative">
+        <a href="https://www.linkedin.com/in/scott-kenneth-jackson/" target="_blank" rel="noopener" class="group relative" aria-label="Open LinkedIn profile (opens in new tab)">
           <span class="absolute top-2.5 left-2.5 min-w-9 min-h-9 bg-white dark:bg-black rounded group-active:bg-main dark:group-active:bg-dark"></span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -223,7 +258,7 @@
             <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
           </svg>
         </a>
-        <a href="https://github.com/scottkennethjackson" target="_blank" class="group relative">
+        <a href="https://github.com/scottkennethjackson" target="_blank" rel="noopener" class="group relative" aria-label="Open GitHub profile (opens in new tab)">
           <span class="absolute top-2.5 left-2.5 min-w-9 min-h-9 bg-white dark:bg-black rounded group-active:bg-main dark:group-active:bg-dark"></span>
           <svg
             xmlns="http://www.w3.org/2000/svg"

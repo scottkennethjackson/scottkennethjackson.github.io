@@ -1,26 +1,18 @@
 import { outputMessage } from "./terminal.js";
-import { carouselLogic } from "./carousel.js";
-import { validateForm } from "./contact-form.js";
 
 outputMessage();
-carouselLogic();
-validateForm();
+
+document.addEventListener("DOMContentLoaded", () => {
+    import("./carousel.js").then(module => {
+        module.carouselLogic();
+    });
+
+    import("./contact-form.js").then(module => {
+        module.validateForm();
+    });
+})
 
 // Collapse/expand sections when heading button is clicked
-function toggleSection(section, button) {
-    const isOpen = section.style.maxHeight;
-
-    if (isOpen) {
-        section.style.maxHeight = null;
-        section.setAttribute("inert", "")
-        button.classList.remove("text-white", "dark:text-main");
-    } else {
-        section.style.maxHeight = section.scrollHeight + "px";
-        section.removeAttribute("inert");
-        button.classList.add("text-white", "dark:text-main");
-    }
-}
-
 function closeSection(section, button) {
     if (section.style.maxHeight) {
         section.style.maxHeight = null;
