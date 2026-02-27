@@ -21,7 +21,7 @@
 
     --inset-shadow-md: inset 0 2px 3px rgba(0, 0, 0, 0.25);
 
-    --spacing-terminal: 315px;
+    --spacing-terminal: 316px;
     --spacing-terminal-md: 360px;
     --spacing-terminal-lg: 450px;
 
@@ -81,6 +81,13 @@
             transition-all
             duration-500
             ease-in-out
+    }
+
+    .link {
+        @apply
+            active:text-white
+            dark:active:text-main
+            underline
     }
 
     .project {
